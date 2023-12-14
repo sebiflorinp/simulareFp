@@ -1,9 +1,19 @@
 class Console:
 	def __init__(self, suspectService, fileRepo):
+		"""
+		The constructor of the Console class.
+		Preconditions: suspectService: an instance of the SuspectService class.
+									 fileRepo: an instance of the FileRepo class.
+		"""
 		self.__suspectService = suspectService
 		self.__fileRepo = fileRepo
 		
 	def run(self):
+		"""
+		A function that is run when the app opens.
+		Preconditions: -
+		Post-conditions: -
+		"""
 		data = self.__fileRepo.loadData()
 		for suspect in data:
 			self.__suspectService.addSuspect(suspect)

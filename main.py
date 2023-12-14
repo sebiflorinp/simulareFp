@@ -1,4 +1,3 @@
-from domain.objects import Suspect
 from domain.validators import SuspectValidator
 from repository.memoryRepo import SuspectRepo
 from service.SuspectService import SuspectService

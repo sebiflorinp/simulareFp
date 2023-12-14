@@ -3,6 +3,11 @@ from domain.objects import Suspect
 
 class FileRepo:
 	def loadData(self):
+		"""
+		A function that returns all data from the data.txt file.
+		Preconditions: -
+		Post-conditions: a list with instances of the Suspect class.
+		"""
 		dataToReturn = []
 		with open("C:\\sebifp\\jetBrains\\homework\\simulareFP\\files\\data.txt", "r") as file:
 			line = file.readline().strip().split(",")

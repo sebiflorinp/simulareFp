@@ -1,15 +1,28 @@
-import datetime
-
-
 class SuspectService:
 	def __init__(self, repo, validator):
+		"""
+		The constructor of the SuspectService class.
+		Preconditions: repo: an instance of the SuspectRepo class
+									 validator: an instance of the SuspectValidator class
+		"""
 		self.__repo = repo
 		self.__validator = validator
 		
 	def addSuspect(self, suspect):
+		"""
+		A function that adds the received suspect in the suspect repo.
+		Preconditions: suspect: an instance of the Suspect class.
+		Post-conditions: -
+		Raises: SuspectRepoError
+		"""
 		self.__repo.addSuspect(suspect)
 		
 	def getSuspectByName(self, name):
+		"""
+		A function that returns all evidence of the suspect who has the input name or a message if there's no evidence.
+		Preconditions: name: a string
+		Post-conditions: a list with Suspect objects.
+		"""
 		allData = self.__repo.getAllSuspects()
 		filteredData = []
 		for data in allData:
@@ -22,6 +35,12 @@ class SuspectService:
 		return filteredData
 
 	def getSuspectsByEvidence(self):
+		"""
+		A function that returns a list of strings that shows if a certain suspect is innocent or guilty.
+		Preconditions: -
+		Post-conditions: a list of strings that have the following format: <suspect name>,<numberOfEvidence>,
+		<time between first and last evidence found>,<inocent or criminal>
+		"""
 		allData = self.__repo.getAllSuspects()
 		dataToReturn = []
 		names = []
