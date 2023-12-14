@@ -1,13 +1,13 @@
-from domain.objects import DNA
-from domain.validators import DNAValidator
-from repository.memoryRepo import DNARepo
-from service.DNAService import DNAService
+from domain.objects import Suspect
+from domain.validators import SuspectValidator
+from repository.memoryRepo import SuspectRepo
+from service.SuspectService import SuspectService
 from ui.console import Console
 
 # Create DNA Service and its dependencies
-repo = DNARepo()
-validator = DNAValidator()
-service = DNAService(repo, validator)
+repo = SuspectRepo()
+validator = SuspectValidator()
+service = SuspectService(repo, validator)
 
 # Create console
 console = Console(service)

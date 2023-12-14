@@ -1,2 +1,2 @@
-class DNAValidator:
+class SuspectValidator:
 	pass

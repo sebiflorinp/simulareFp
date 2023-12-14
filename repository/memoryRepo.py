@@ -1,2 +1,2 @@
-class DNARepo:
+class SuspectRepo:
 	pass

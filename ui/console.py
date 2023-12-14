@@ -1,6 +1,6 @@
 class Console:
-	def __init__(self, DNAService):
-		self.__DNAService = DNAService
+	def __init__(self, SuspectService):
+		self.__SuspectService = SuspectService
 		
 	def run(self):
 		print("Welcome!!!!!!")
@@ -9,7 +9,10 @@ class Console:
 		while True:
 			command = input("Enter a command.\n")
 			if command == "display evidence by suspect":
-				pass
+				name = input("Enter suspects name.\n")
+				dataToDisplay = self.__SuspectService.getAllSuspects()
+				for suspect in dataToDisplay:
+					print(suspect)
 			if command == "find criminals":
 				pass
 			if command == "exit":
