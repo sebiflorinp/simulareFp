@@ -18,6 +18,8 @@ class Console:
 				for suspect in dataToDisplay:
 					print(suspect)
 			if command == "find criminals":
-				pass
+				dataToDisplay = self.__suspectService.getSuspectsByEvidence()
+				for data in dataToDisplay:
+					print(data)
 			if command == "exit":
 				return 
