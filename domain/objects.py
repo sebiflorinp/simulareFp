@@ -1,0 +1,2 @@
+def DNA():
+	return None

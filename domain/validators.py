@@ -1,0 +1,2 @@
+class DNAValidator:
+	pass
