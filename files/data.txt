@@ -1,0 +1,10 @@
+1,found somewhere,2000/10/1,DNA,Simon
+2,found elsewhere,2023/1/10,photo,Paul
+3,found idk,2022/10/10,statement,Cristi
+4,seen in a car,2021/1/10,photo,Ionel
+5,found in the fridge,2013/12/11,DNA,Paul
+6,seen on the street,2022/5/10,photo,Ionel
+7,seen somewhere,2010/12/5,statement,Paul
+8,found somewhere,2011/11/12,photo,Cristi
+9,seen elsewhere,2023/12/30,DNA,Simon
+10,found somewhere,2000/12/10,statement,Cristi

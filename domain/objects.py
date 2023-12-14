@@ -6,6 +6,9 @@ class Suspect:
 		self.__type = type
 		self.__name = name
 	
+	def __str__(self):
+		return f"{self.__id},{self.__description},{self.__date},{self.__date},{self.__type},{self.__name}"
+	
 	def getId(self):
 		return self.__id
 

@@ -1,0 +1,2 @@
+class SuspectRepoError(Exception):
+	pass
